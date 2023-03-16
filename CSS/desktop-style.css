@@ -1,0 +1,42 @@
+@media screen and (min-width: 1024px){
+
+    header .header-top{
+        display: block;
+        width: 100%;
+        position: fixed;
+        background-color: #7633e2;
+    }
+
+    header .header-top .flex{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header .header-top .midias-sociais {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+
+    }
+
+    header .header-top .contatos {
+        display: flex;
+        gap: 60px;
+    }
+    
+    header .header-top .contatos > * {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #FFF;
+
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 15px;
+    }
+
+    header .header-bottom{
+        display: none;
+    }
+}

@@ -1,15 +1,273 @@
-/* import das fonts */
+/* imports das fontes */
 @font-face {
-    font-family: TitilliumWeb-Black;
-    src: url(../Assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf);
+    font-family: "TitiliumWeb-Bold";
+    src: url(../assests/fonts/Titillium_Web/TitilliumWeb-Bold.ttf);
 }
-*{
+@font-face {
+    font-family: "TitiliumWeb-Regular";
+    src: url(../assests/fonts/Titillium_Web/TitilliumWeb-Regular.ttf);
+}
+@font-face {
+    font-family: "TitilliumWeb-Black";
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf);
+}
+@font-face {
+    font-family: "Inter";
+    src: url(../assests/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+* {
     margin: 0;
-    padding:0;
-    box-sizing: border-box
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #ffffff;
+    /* background-color: #1B1426; */
+}
+
+
+/* Classes genéricas */
+.layout-grid {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* justify content + align items */
+.alinhamento-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Mobile First */
-header .header-bottom .phone {
-  color: red;
+
+/* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    width: 100vw;
+    height: 60px;
+    background-color: #1B1426;
 }
+
+/* Header Top */
+header .header-top {
+    display: none;
+}
+
+/* Header Bottom */
+
+
+header .header-bottom {
+    height: 100%;
+}
+
+header .header-bottom img.logo {
+    width: 86px;
+}
+
+header .header-bottom nav {
+    position: fixed;
+    top: 60px;
+    left: -80vw;
+    width: 80vw;
+    height: calc(100vh - 60px);
+    
+
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom right, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
+    backdrop-filter: blur(45px);
+    
+
+transition: left 0.4s;
+}
+.mostrar-more{
+    right: 0 !important;
+}
+.mostrar-menu {
+    left: 0 !important;
+}
+
+/* somente links "filhos diretos" */
+header .header-bottom nav > a {
+    color: white;
+    font-family: "Inter";
+    font-size: 15px;
+    border-bottom: 1px solid #F9AA01;
+    text-align: center;
+    text-decoration: none;
+    padding: 30px 0;
+
+
+}
+
+header header.bottom nav > a:first-of-type{
+    border-bottom: none ;
+} 
+
+/* menu lateral direito - icones */
+header .header-bottom .menu-usuarios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: fixed;
+    right: -80vw;
+    top: 60px;
+    width: 20vw;
+    background-image: linear-gradient(to bottom right, rgba(27, 20, 38, 0.7), rgb(27, 20, 38, 0.4));
+    backdrop-filter: blur(45px);
+    
+    padding: 20px 0;
+
+    transition: right 0.4s;
+}
+
+header .header-bottom  .midias-sociais {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    /* gap e o espacamento */
+
+    position: absolute;
+    bottom: 30px;
+}
+
+
+/* MAIN */
+main {
+    margin-top: 60px;
+}
+/* Banner */
+.banner {
+    width: 100%;
+    height: 606px;
+    
+    background-image: url(../assests/images/banner-mobile-valorant.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.banner h1 {
+    font-family: "TitilliumWeb-Black";
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    text-shadow: 0 0 10px #FD4255;
+
+}
+
+.banner button {
+
+    font-family: "TitiliumWeb-Bold";
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    width: 171px;
+    height: 40px;
+    background-color: #F9AA01;
+    border: #F9AA01;
+    
+}
+
+.banner .botao-article {
+    display: flex;
+    justify-content:center;
+    padding-top: 470px;
+    
+    
+
+}
+
+main .jogos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 588px;
+    justify-content: space-evenly;
+    background-color: #1B1426;
+}
+
+/* pagina progamer */
+main .jogadores {
+    background-color: #F9AA01;
+    width: 100%;
+    height: 1535px;
+
+}
+
+ main .jogadores h2 {
+    font-family: "TitilliumWeb-Black";
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+
+}
+
+/* Tablets >=768px */
+@media  and (min-width: 768px) {
+    
+}
+
+/* Desktops >= 1200px */
+@media  and (min-width: 1200px) {
+    .layout-grid {
+        width: 100%;
+        max-width: 1200px;
+        border: 3px dotted
+    }
+   
+
+/* HEADER */
+header {
+position: static;
+height: 140px;
+}
+
+header .menu-hamburguer,
+header .menu-pontinhos,
+header .header-bottom nav .phone,
+header .header-bottom nav .email,
+header .header-bottom nav .midias-sociais {
+    display: none;
+}
+
+header .header-bottom img.logo {
+    width: 200px;
+}
+
+header .header-bottom nav {
+    position: static;
+    width: 440px;
+    height: 50px;
+    flex-direction: row;
+    background-color: red;
+
+}
+
+header .header-bottom .menu-usuarios {
+    position: static;
+    flex-direction: row;
+    width: 180px;
+    height: 50px;
+    background-color: transparent;
+}
+
+ 
+
+/* MAIN */
+main {
+    margin-top: 0;
+}
+ }

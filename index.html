@@ -1,108 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Gamer Manhã</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/desktop-style.css" media="(min-width: 1024px)">
 </head>
 
 <body>
+
     <header>
 
         <div class="header-top">
-            <div class="contatos">
-                <div class="phone">
-                    <img src="Assets/Icons/icone_telefone.png" alt="Icone de telefone">
-                    <span>(11) 0900-1010</span>
+            <div class="layout-grid flex">
+                <div class="contatos">
+                    <div class="phone">
+                        <img src="./assests/icons/phone.png" alt="Ícone de telefone">
+                        <span>(11) 0900-1010</span>
+                    </div>
+                    <div class="email">
+                        <img src="assests/icons/Email.png" alt="Ícone de e-mail">
+                        <span>contato@gamer.com.br</span>
+                    </div>
                 </div>
-                <div class="email">
-                    <img src="Assets/Icons/icone_email.png" alt="Icone de email">
-                    <span>contato@gamer.com.br</span>
+
+                <div class="midias-sociais">
+                    <a href="">
+                        <img src="./assests/icons/Facebook (1).png" alt="Imagem link do Facebook da empresa Gamer">
+                    </a>
+                    <a href="">
+                        <img src="./assests/icons/Linkedin (1).png" alt="Imagem link do Linkedin da empresa Gamer">
+                    </a>
+                    <a href="">
+                        <img src="./assests/icons/Instagram (1).png" alt="Imagem link do Instagram da empresa Gamer">
+                    </a>
                 </div>
             </div>
         </div>
 
-        <div class="Midias-sociais">
-
-            <a href="">
-                <img src="Assets/Icons/Vector (4).png" alt="Imagem link Facebook da empresa">
-            </a>
-            <a href="">
-                <img src="Assets/Icons/Vector (7).png" alt="Imagem link Linkedin da empresa">
-            </a>
-            <a href="">
-                <img src="Assets/Icons/Vector (5).png" alt="Imagem link Instagram da empresa">
-            </a>
-
-        </div>
-
         <div class="header-bottom">
+            <div class="layout-grid alinhamento-between-center">
+                <!-- menu hamburger -->
+                <img onclick="mostrarMenu()" src="assests/icons/Menu.png" class="menu-hamburger"
+                    alt="Ícone para abrir e fechar o menu de celular">
 
-            <img src="Assets/Icons/Vector.png" class="menu-hamburguer" alt="Icone para abrir e fechar o menu de celular">
+                <img class="logo" src="./assests/icons/logotipo-gamer (2) 1.png"
+                    alt="Logotipo da empresa. Texto Gamer com um joystick ao centro">
 
-            <img class="logo" src="Assets/Icons/logotipo-gamer.png" alt="Logotipo da empresa. Texto Gamer com um joystick ao centro">
+                <nav class="menu" id="menu">
+                    <a href="">Início</a>
+                    <a href="">Jogadores</a>
+                    <a href="">Equipes</a>
+                    <a href="">Notícias</a>
 
-            <nav class="menu">
-                <a href="">Inicio</a>
-                <a href="">Jogadores</a>
-                <a href="">Equipes</a>
-                <a href="">Noticias</a>
+                    <!-- visível apenas no mobile -->
 
+                    <a class="phone">
+                        <img src="./assests/icons/phone.png"
+                            alt="Ícone de Telefone. Abre e fecha o menu principal, no celular">
+                        <span>(11) 0900-1010</span>
+                    </a>
+                    <a class="email">
+                        <img src="./assests/icons/Email.png" alt="Ícone de e-mail">
+                        <span>contato@gamer.com.br</span>
+                    </a>
 
-                <!-- visivel apenas no mobile -->
-
-                <div class="phone">
-                    <img src="" alt="Icone de telefone">
-                    <span>(11) 0900-1010</span>
-                </div>
-                <div class="email">
-                    <img src="" alt="Icone de email">
-                    <span>contato@gamer.com.br</span>
-
-                    <div class="Midias-sociais">
-
+                    <div class="midias-sociais">
                         <a href="">
-                            <img src="" alt="Imagem link Facebook da empresa">
+                            <img src="./assests/icons/Facebook (1).png" alt="Imagem link do Facebook da empresa Gamer">
                         </a>
 
                         <a href="">
-                            <img src="" alt="Imagem link Linkedin da empresa">
+                            <img src="./assests/icons/Linkedin (1).png" alt="Imagem link do Linkedin da empresa Gamer">
                         </a>
 
                         <a href="">
-                            <img src="" alt="Imagem link Instagram da empresa">
+                            <img src="./assests/icons/Instagram (1).png"
+                                alt="Imagem link do Instagram da empresa Gamer">
                         </a>
 
                     </div>
 
 
-            </nav>
+                </nav>
 
-            <!-- menu 3 pontinhos -->
-            <img src="Assets/Icons/Vector (1).png" class="menu-pontinhos" alt="Icone 3 pontinhos, abre o menu de usuarios">
+                <!-- menu 3 pontinhos -->
+                <img onclick="mostrarMore()" src="./assests/icons/More.png" class="menu-pontinhos"
+                    alt="Ícone 3 pontinhos, abre o menu de usuários">
 
-            <div class="menu-usuarios">
-
-                <a href="">
-                    <img src="Assets/Icons/Vector (2).png" alt="Icone do perfil">
-                </a>
-
-                <a href="">
-                    <img src="Assets/Icons/Vector (3).png" alt="Icone compras">
-                </a>
-
-                <a href="">
-                    <img src="Assets/Icons/Icones_header.png" alt="Icone de pesquisa">
-                </a>
-
+                <div class="menu-usuarios" id="more">
+                    <a href="">
+                        <img src="./assests/icons/User (1).png" alt="Ícone de perfil">
+                    </a>
+                    <a href="">
+                        <img src="./assests/icons/Shopping bag (1).png" alt="Ícone de sacola">
+                    </a>
+                    <a href="">
+                        <img src="./assests/icons/Search (1).png" alt="Ícone lupa de pesquisa">
+                    </a>
+                </div>
             </div>
-
         </div>
-
     </header>
+
+    <script>
+        function mostrarMenu() {
+            document.getElementById("menu").classList.toggle("mostrar-menu");
+        }
+
+        function mostrarMore() {
+            document.getElementById("more").classList.toggle("mostrar-more");
+        }
+    </script>
+
+    <main>
+        <section class="banner">
+            <h1>Liga Gamers</h1>
+            <article class="botao-article">
+                <button class="botao-sobre">Sobre</button>
+            </article>
+        </section>
+
+        <section class="jogos">
+            <div class="layout-grid">
+            <img src="./assests/images/fifa.png.png" alt="Imagem do jogo Fifa 2023">
+            <img src="./assests/images/counter.strike.png.png" alt="Imagem do jogo Counter strike">
+        </div>
+        </section>
+
+        <section class="jogadores">
+            <h2>Entre para o time progamer</h2>
+            <img src="./assests/images/kiljoy.png" alt="Imagem da personagem kiljoy">
+            <img src="./assests/images/lp-gamer-home_0000s_0000s_0002_lol.png" alt="Imagem da personagem Jinx">
+        </section>
+    </main>
+
+    <footer>Todos o diretos reservados</footer>
+
+
+
+
 </body>
 
 </html>
