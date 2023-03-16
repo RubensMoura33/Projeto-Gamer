@@ -216,24 +216,63 @@ main .jogadores {
 }
 
 /* Tablets >=768px */
-@media  and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     
 }
 
 /* Desktops >= 1200px */
-@media  and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .layout-grid {
         width: 100%;
         max-width: 1200px;
         border: 3px dotted
     }
-   
+
 
 /* HEADER */
 header {
 position: static;
 height: 140px;
+
 }
+
+header .header-top {
+    display: block;
+     /*block é o valor default  */
+}
+
+header .header-top .midias-sociais {
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .header-top .contatos {
+    width: 415px;
+    display: flex;
+    justify-content: space-between;
+    
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 400;
+
+    border: 2px solid white;
+}
+
+header .header-top .midias-sociais {
+    border: 2px solid white;
+}
+
+header .header-top .contatos > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border: 1px yellow;
+}
+
+
 
 header .menu-hamburguer,
 header .menu-pontinhos,
@@ -251,9 +290,16 @@ header .header-bottom nav {
     position: static;
     width: 440px;
     height: 50px;
+    padding: 0;
     flex-direction: row;
-    background-color: red;
+    align-items: center;
+    /* background-color: red; */
 
+}
+
+header .header-bottom nav > a {
+    border: none;
+    font-size: 14px;
 }
 
 header .header-bottom .menu-usuarios {
@@ -270,4 +316,15 @@ header .header-bottom .menu-usuarios {
 main {
     margin-top: 0;
 }
- }
+} 
+
+.banner {
+    height: 722px;
+    background-image: url(../assests/images/Banner_background_1.png) ;
+    background-size:cover;
+    background-position: top;
+}
+
+.banner h1 {
+    font-size: 80px;
+}
