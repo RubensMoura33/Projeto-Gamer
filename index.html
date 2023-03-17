@@ -7,35 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Gamer Manhã</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/desktop-style.css" media="(min-width: 1024px)">
 </head>
 
 <body>
 
     <header>
 
+        <!-- linha de cima com a borda amarela -->
         <div class="header-top">
+
             <div class="layout-grid alinhamento-between-center">
                 <div class="contatos">
                     <div class="phone">
-                        <img src="./assests/icons/phone.png" alt="Ícone de telefone">
+                        <img src="./assets/icons/phone.png" alt="Ícone de telefone">
                         <span>(11) 0900-1010</span>
                     </div>
                     <div class="email">
-                        <img src="assests/icons/Email.png" alt="Ícone de e-mail">
+                        <img src="./assets/icons/Email.png" alt="Ícone de e-mail">
                         <span>contato@gamer.com.br</span>
                     </div>
                 </div>
 
                 <div class="midias-sociais">
                     <a href="">
-                        <img src="./assests/icons/Facebook (1).png" alt="Imagem link do Facebook da empresa Gamer">
+                        <img src="./assets/icons/Facebook (1).png" alt="Imagem link do Facebook da empresa Gamer">
                     </a>
                     <a href="">
-                        <img src="./assests/icons/Linkedin (1).png" alt="Imagem link do Linkedin da empresa Gamer">
+                        <img src="./assets/icons/Linkedin (1).png" alt="Imagem link do Linkedin da empresa Gamer">
                     </a>
                     <a href="">
-                        <img src="./assests/icons/Instagram (1).png" alt="Imagem link do Instagram da empresa Gamer">
+                        <img src="./assets/icons/Instagram (1).png" alt="Imagem link do Instagram da empresa Gamer">
                     </a>
                 </div>
             </div>
@@ -44,10 +45,10 @@
         <div class="header-bottom">
             <div class="layout-grid alinhamento-between-center">
                 <!-- menu hamburger -->
-                <img onclick="mostrarMenu()" src="assests/icons/Menu.png" class="menu-hamburger"
+                <img onclick="mostrarMenu()" src="./assets/icons/Menu.png" class="menu-hamburger"
                     alt="Ícone para abrir e fechar o menu de celular">
 
-                <img class="logo" src="./assests/icons/logotipo-gamer (2) 1.png"
+                <img class="logo" src="./assets/icons/logotipo-gamer (2) 1.png"
                     alt="Logotipo da empresa. Texto Gamer com um joystick ao centro">
 
                 <nav class="menu" id="menu">
@@ -59,92 +60,166 @@
                     <!-- visível apenas no mobile -->
 
                     <a class="phone">
-                        <img src="./assests/icons/phone.png"
+                        <img src="./assets/icons/phone.png"
                             alt="Ícone de Telefone. Abre e fecha o menu principal, no celular">
                         <span>(11) 0900-1010</span>
                     </a>
                     <a class="email">
-                        <img src="./assests/icons/Email.png" alt="Ícone de e-mail">
+                        <img src="./assets/icons/Email.png" alt="Ícone de e-mail">
                         <span>contato@gamer.com.br</span>
                     </a>
 
                     <div class="midias-sociais">
                         <a href="">
-                            <img src="./assests/icons/Facebook (1).png" alt="Imagem link do Facebook da empresa Gamer">
+                            <img src="./assets/icons/Facebook (1).png" alt="Imagem link do Facebook da empresa Gamer">
                         </a>
-
                         <a href="">
-                            <img src="./assests/icons/Linkedin (1).png" alt="Imagem link do Linkedin da empresa Gamer">
+                            <img src="./assets/icons/Linkedin (1).png" alt="Imagem link do Linkedin da empresa Gamer">
                         </a>
-
                         <a href="">
-                            <img src="./assests/icons/Instagram (1).png"
-                                alt="Imagem link do Instagram da empresa Gamer">
+                            <img src="./assets/icons/Instagram (1).png" alt="Imagem link do Instagram da empresa Gamer">
                         </a>
-
                     </div>
-
-
                 </nav>
 
                 <!-- menu 3 pontinhos -->
-                <img onclick="mostrarMore()" src="./assests/icons/More.png" class="menu-pontinhos"
+                <img onclick="mostrarUsuarios()" src="./assets/icons/More.png" class="menu-pontinhos"
                     alt="Ícone 3 pontinhos, abre o menu de usuários">
 
-                <div class="menu-usuarios" id="more">
+                <div class="menu-usuarios" id="menu-usuarios">
                     <a href="">
-                        <img src="./assests/icons/User (1).png" alt="Ícone de perfil">
+                        <img src="./assets/icons/User (1).png" alt="Ícone de perfil">
                     </a>
                     <a href="">
-                        <img src="./assests/icons/Shopping bag (1).png" alt="Ícone de sacola">
+                        <img src="./assets/icons/Shopping bag (1).png" alt="Ícone de sacola">
                     </a>
                     <a href="">
-                        <img src="./assests/icons/Search (1).png" alt="Ícone lupa de pesquisa">
+                        <img src="./assets/icons/Search (1).png" alt="Ícone lupa de pesquisa">
                     </a>
                 </div>
             </div>
         </div>
     </header>
 
-    <script>
-        function mostrarMenu() {
-            document.getElementById("menu").classList.toggle("mostrar-menu");
-        }
-
-        function mostrarMore() {
-            document.getElementById("more").classList.toggle("mostrar-more");
-        }
-    </script>
 
     <main>
         <section class="banner">
             <h1>Liga Gamers</h1>
-            <article class="botao-article">
-                <button class="botao-sobre">Sobre</button>
-            </article>
+            <a href="" class="botao-sobre">Sobre</a>
         </section>
-
-       <div class="layout-grid"></div>
 
         <section class="jogos">
-            
-            <img src="./assests/images/fifa.png.png" alt="Imagem do jogo Fifa 2023">
-            <img src="./assests/images/counter.strike.png.png" alt="Imagem do jogo Counter strike">
-        </div>
+            <div class="layout-grid jogos-flex">
+                <img src="assets/images/fifa.png.png" alt="Imagem do jogo Fifa 2023">
+                <img src="assets/images/counter.strike.png.png" alt="Imagem do jogo Counter Strike">
+            </div>
+
         </section>
 
-        <section class="jogadores">
-            <h2>Entre para o time progamer</h2>
-            <img src="./assests/images/kiljoy.png" alt="Imagem da personagem kiljoy">
-            <img src="./assests/images/lp-gamer-home_0000s_0000s_0002_lol.png" alt="Imagem da personagem Jinx">
-        </section>
+
     </main>
 
-    <footer>Todos o diretos reservados</footer>
+    <footer>
+        <div class="layout-grid footer-top">
+
+            <div id="sobre">
+                <img src="" alt="">
+
+                <p>Nosso sucesso na criação de soluções de negócios se deve em grande parte à nossa equipe talentosa e
+                    altamente comprometida.</p>
+                <a href="">
+                    <img src="assets/images/logotipo-gamer.png" alt="">
+                </a>
+
+                <!-- exportar as imagens do figma -->
+                <div id="midias-sociais-footer">
 
 
+                    <a href="">
+                        <img src="assets/images/icone_facebook_footer.png" alt="Icone do Facebook">
+                    </a>
 
+                    <a href="">
+                        <img src="assets/images/icone_linkedin_footer.png" alt="Icone do Linkedin">
+                    </a>
 
+                    <a href="">
+                        <img src="assets/images/icone_intagram_footer.png" alt="Icone do Instagram">
+                    </a>
+
+                </div>
+            </div>
+            <div id="links-uteis">
+                <div class="titulos-uteis">
+                    <h3>Links Úteis</h3>
+                    <hr>
+                </div>
+                <ul class="menu-footer">
+                    <li>
+                        <a href="Início"></a>
+                    </li>
+                    <li>
+                        <a href="Jogadores"></a>
+                    </li>
+                    <li>
+                        <a href="Equipes"></a>
+                    </li>
+                    <li>
+                        <a href="Noticias"></a>
+                    </li>
+                    <li>
+                        <a href="Login"></a>
+                    </li>
+                </ul>
+            </div>
+            <div id="contatos">
+                <div class="titulos-uteis">
+                    <h3>Contatos</h3>
+                    <hr>
+                </div>
+
+                <p>
+                    <span class="contatos-titulo">Localizaçao:</span>
+                    Rua Niterói, 180 - São Caetano do Sul- SP
+                </p>
+
+                <p>
+                    <span class="contatos-titulo">Junte-se a nós:</span>
+                    contato@gamer.com.br
+                </p>
+
+                <p>
+                    <span class="contatos-titulo">Telefone:</span>
+                    (11) 0900-1010
+                </p>
+
+            </div>
+            <div id="newsletter">
+                <div class="titulos-footer">
+                    <h3>Newsletter</h3>
+                    <hr>
+                </div>
+                <form action="" class="frm-news">
+                    <input type="email" placeholder="Digite seu e-mail">
+                    <button>Enviar</button>
+                </form>
+            </div>
+            <div id="titulos-uteis"></div>
+
+        </div>
+        <div class="layout-grid footer-bottom">
+            <p> Todos os diretos reservados</p>
+        </div>
+    </footer>
+
+    <script>
+        function mostrarMenu() {
+            document.getElementById("menu").classList.toggle("mostrar-menu");
+        }
+        function mostrarUsuarios() {
+            document.getElementById("menu-usuarios").classList.toggle("mostrar-usuarios");
+        }
+    </script>
 </body>
 
 </html>
