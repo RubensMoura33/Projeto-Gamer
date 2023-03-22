@@ -1,0 +1,193 @@
+/* imports das fontes */
+
+/* TITILLIUM WEB */
+@font-face {
+    font-family: TitilliumWeb-Black;
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf);
+}
+
+@font-face {
+    font-family: TitilliumWeb-Bold;
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Bold.ttf);
+}
+
+@font-face {
+    font-family: TitilliumWeb-Regular;
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Regular.ttf);
+}
+
+/* INTER */
+@font-face {
+    font-family: Inter;
+    src: url(../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+/* QUICKSAND */
+@font-face {
+    font-family: Quicksand;
+    src: url(../assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #ffffff;
+}
+
+/* Classes genéricas */
+.mostrar-menu {
+    left: 0 !important;
+}
+
+.mostrar-usuarios {
+    right: 0 !important;
+}
+
+.layout-grid {
+    /* border: 1px solid salmon; */
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* justify content + align items */
+.alinhamento-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Mobile First */
+
+/* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    width: 100vw;
+    height: 60px;
+    background-color: #1B1426;
+}
+
+/* Header Top */
+header .header-top {
+    display: none;
+}
+
+/* Header Bottom */
+
+
+header .header-bottom {
+    height: 100%;
+}
+
+header .header-bottom img.logo {
+    width: 86px;
+}
+
+header .header-bottom nav {
+    position: fixed;
+    top: 60px;
+    left: -80vw;
+    width: 80vw;
+    height: calc(100vh - 60px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
+    backdrop-filter: blur(45px);
+
+    transition: left 0.4s;
+}
+
+/* somente links "filhos diretos" */
+header .header-bottom nav>a {
+    padding: 30px 0;
+    color: white;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 2px solid #F9AA01;
+}
+
+header .header-bottom nav>a:hover {
+    background-color: #F9AA01;
+
+}
+
+header .header-bottom nav>a:last-of-type {
+    border-bottom: none;
+}
+
+/* ícone de mídias sociais possibilidade position 
+header .header-bottom nav .midias-sociais {
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 100px);
+    border: 1px solid red;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+*/
+
+header .header-bottom nav .midias-sociais {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    /* gap é o espaçamento entre os elementos, funciona em linha e também em coluna. */
+    gap: 50px;
+}
+
+/* menu lateral direito - ícones */
+header .header-bottom .menu-usuarios {
+    position: fixed;
+    top: 60px;
+    right: -19vw;
+    width: 19vw;
+    height: 170px;
+    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
+    backdrop-filter: blur(45px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    transition: right 0.4s;
+}
+/* MAIN */
+main {
+    margin-top: 60px;
+}
+
+/* Banner */
+.banner {
+    width: 100%;
+    height: 606px;
+    padding: 40px 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rebeccapurple;
+    background-image: url(../assets/images/banner-mobile-valorant.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+
