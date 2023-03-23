@@ -28,6 +28,11 @@
     src: url(../assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
 }
 
+@font-face {
+    font-family: Inter-Thin;
+    src: url(../assets/fonts/Inter/static/Inter-Thin.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -227,6 +232,91 @@ main .jogos .jogos-flex {
     align-items: center;
 }
 
+section.progamer {
+    background-color: #F9AA01;
+
+}
+
+section.progamer .progamer-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 80px;
+    padding-right: 20px;
+    padding-bottom: 120px;
+    padding-left: 20px;
+}
+
+section.progamer h2 {
+    width: 100%;
+    margin-bottom: 20px;
+    font-family: TitilliumWeb-Black;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+}
+
+section.progamer hr {
+    width: 50%;
+    margin: 0 auto 60px;
+    border: 1px solid #000;
+}
+
+section.progamer .gamers {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+section.progamer .progamer-flex .gamers>img {
+    width: 314px;
+}
+section.progamer .progamer-flex .gamers #jogos-diferentes {
+    position: absolute;
+    right: 0;
+    bottom: 90px;
+}
+
+section.progamer .progamer-flex .gamers #professores {
+    position: absolute;
+    top: 110px;
+    left: 0;
+}
+
+section.progamer .gamers .card-gamer .produto {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    max-width: 231px;
+    height: 300px;
+    padding: 25px;
+    font-size: .8rem;
+    background-image: linear-gradient(to right bottom, rgba(122, 49, 236, .2), rgba(47, 7, 109, .83));
+    backdrop-filter: blur(5px);
+    border-radius: 8px;
+}
+
+section.progamer .cards-gamer.produto h3 {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: TitilliumWeb-Black;
+    /* text-shadow: 0 0 0px #fff; */
+    text-align: justify;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.cards-progamer-layer .card-gamer .produto p {
+    font-family: Inter-Thin;
+    text-align: justify;
+}
+
+
 /* Footer */
 footer {
     padding-top: 60px;
@@ -270,7 +360,6 @@ footer .footer-top {
 }
 /* apagar */
 footer .footer-top > div {
-    border: 2px solid white;
 }
 
 footer .footer-top .titulos-footer h3 {
@@ -341,7 +430,6 @@ footer #newsletter input {
     background-color: transparent;
     background-image: linear-gradient(to right bottom, rgba(239, 239, 239, .6), rgba(239, 239, 239, .1));
     backdrop-filter: blur(6px);
-    border: 1px solid white;
     color: white;
     padding: 5px 10px;
     font-family: TitilliumWeb-Regular;
